@@ -1,0 +1,64 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #565EF4, #F44B7B);
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+#root {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
+
+#title {
+    font-size: 3em;
+    margin-bottom: 4%;
+}
+
+#search {
+    width: 26vw;
+    height: 3vh;
+    background: #FFF;
+    border-radius: 3vh;
+}
+
+#bar {
+    border: none;
+    height: 2.8vh;
+    margin-top: 0.1vh;
+    width: 23vw;
+    padding: 0;
+}
+
+#bar:focus {
+    outline: none;
+}
+
+#bar:focus::placeholder{
+    padding-left: 0%;
+}
+
+#bar::placeholder {
+    transition: padding 150ms;
+    padding-left: 43%;
+}
+
+#sub {
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    border: none;
+    border-radius: 3vh;
+    background: #FFF;
+    cursor: pointer;
+}
